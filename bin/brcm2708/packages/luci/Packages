@@ -1,0 +1,156 @@
+Package: luci-app-firewall
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, firewall
+Source: feeds/luci/applications/luci-app-firewall
+Section: luci
+Architecture: all
+Installed-Size: 10679
+Filename: luci-app-firewall_git-16.217.35130-6a11f71-1_all.ipk
+Size: 11378
+MD5Sum: e8e85eec8026be340950770bbfde26d0
+SHA256sum: 7246980abf002257bb0b121cf74f2d2c51d9f39769c45689cba2ac51f499b571
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-shadowsocks-libev
+Version: git-16.217.35130-6a11f71-1
+Depends: libc
+Source: feeds/luci/applications/luci-app-shadowsocks-libev
+Section: luci
+Architecture: all
+Installed-Size: 1585
+Filename: luci-app-shadowsocks-libev_git-16.217.35130-6a11f71-1_all.ipk
+Size: 2350
+MD5Sum: 162b2068326a2e9650249647bbb32ec1
+SHA256sum: 5abd3b97f017dbd64de5e0df728d6c6fd5fbe5c8849bf8c9d3de0833f295b3fb
+Description:  LuCI Support for Shadowsocks-libev
+
+Package: luci-base
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, lua, libuci-lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc
+Source: feeds/luci/modules/luci-base
+Section: luci
+Architecture: brcm2708
+Installed-Size: 124110
+Filename: luci-base_git-16.217.35130-6a11f71-1_brcm2708.ipk
+Size: 124970
+MD5Sum: 2c31a4b3695224a8e0dd997ca9ed5ab9
+SHA256sum: 7ac770f89cdf16d3992e3e508e6da8b10e88be85f80d53ce0eae424dbe88b0b9
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, liblua, libnl-tiny
+Source: feeds/luci/libs/luci-lib-ip
+Section: luci
+Architecture: brcm2708
+Installed-Size: 9349
+Filename: luci-lib-ip_git-16.217.35130-6a11f71-1_brcm2708.ipk
+Size: 10070
+MD5Sum: 1b8d5d54a2a0ccf6b003618dbce5660b
+SHA256sum: 5ee9591ab42bd24ad72f4e588b0801a23a538f4273b0dc77b34e0f46be63a2f3
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, liblua, libjson-c
+Source: feeds/luci/libs/luci-lib-jsonc
+Section: luci
+Architecture: brcm2708
+Installed-Size: 3630
+Filename: luci-lib-jsonc_git-16.217.35130-6a11f71-1_brcm2708.ipk
+Size: 4304
+MD5Sum: e0207d573b7147cea888775fc1294062
+SHA256sum: 34afd7f0221befd2a8fe4b6df85c0594a03c298a883d186057ca105591c4ba9e
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, liblua
+Source: feeds/luci/libs/luci-lib-nixio
+Section: luci
+Architecture: brcm2708
+Installed-Size: 29987
+Filename: luci-lib-nixio_git-16.217.35130-6a11f71-1_brcm2708.ipk
+Size: 30602
+MD5Sum: b7bff7e6fd669a915e141bee1536b270
+SHA256sum: 26ea58af6e90fce7010aae7d18acde1ead1e433cf35c747e39ccd3a67a8ffaba
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, luci-base
+Source: feeds/luci/modules/luci-mod-admin-full
+Section: luci
+Architecture: brcm2708
+Installed-Size: 73960
+Filename: luci-mod-admin-full_git-16.217.35130-6a11f71-1_brcm2708.ipk
+Size: 74776
+MD5Sum: 0186a1dc6213cc7d60fce5a8f0e3d93a
+SHA256sum: fd8efb7efdba5c09a559af6e1f8dc89af159f09c80f6b45dafa0af411432a4f5
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-proto-ipv6
+Version: git-16.217.35130-6a11f71-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ipv6
+Section: luci
+Architecture: all
+Installed-Size: 4786
+Filename: luci-proto-ipv6_git-16.217.35130-6a11f71-1_all.ipk
+Size: 5499
+MD5Sum: 399020f1b545052e5d9089ef8bfe2607
+SHA256sum: 277d041e7a5d74e01d5a0da1c47cda140666f662d787c959a188df7225831ab2
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite/aiccu
+
+Package: luci-proto-ppp
+Version: git-16.217.35130-6a11f71-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ppp
+Section: luci
+Architecture: all
+Installed-Size: 3083
+Filename: luci-proto-ppp_git-16.217.35130-6a11f71-1_all.ipk
+Size: 3747
+MD5Sum: 248b92ef216113ab1ebcf9c08fe25866
+SHA256sum: 5abccbcfbb93b4839e876b60dd81cfac323d75509d71361225e6cd588fc92764
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-ssl
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, luci, libustream-polarssl, px5g
+Source: feeds/luci/collections/luci-ssl
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci-ssl_git-16.217.35130-6a11f71-1_all.ipk
+Size: 798
+MD5Sum: d5e6bd7329253f2996ac85c4b0f3c5c1
+SHA256sum: 015a6f22441c0c4af43caa47b36547e4e0fa6930bef5e568f2027a7ac60b710e
+Description:  Standard OpenWrt set with HTTPS support
+
+Package: luci-theme-bootstrap
+Version: git-16.217.35130-6a11f71-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-bootstrap
+Section: luci
+Architecture: all
+Installed-Size: 13022
+Filename: luci-theme-bootstrap_git-16.217.35130-6a11f71-1_all.ipk
+Size: 13738
+MD5Sum: 8733affdee72bad82e3e3e7145881c0e
+SHA256sum: 4017671ddeaedef1abe4c382cf2f3a9e1b6775747503217ff1acc8089801e134
+Description:  Bootstrap Theme (default)
+
+Package: luci
+Version: git-16.217.35130-6a11f71-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6
+Source: feeds/luci/collections/luci
+Section: luci
+Architecture: all
+Installed-Size: 105
+Filename: luci_git-16.217.35130-6a11f71-1_all.ipk
+Size: 863
+MD5Sum: 68e94c9d9b7751f766c805dc8e63ac4c
+SHA256sum: dd15d2ab4eeb5dc1a157c64e5d06c18ad163f5694bb13cb63427fcb3eff6f0fd
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+

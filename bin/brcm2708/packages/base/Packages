@@ -1,0 +1,1029 @@
+Package: base-files
+Version: 169-49881
+Depends: libc, netifd, procd, jsonfilter, usign, fstools
+Source: package/base-files
+License: GPL-2.0
+Section: base
+Architecture: brcm2708
+Installed-Size: 32335
+Filename: base-files_169-49881_brcm2708.ipk
+Size: 33266
+MD5Sum: 4ce74fa01cdb989b369d3c38b7383fe8
+SHA256sum: 1baef0ae09969b19e25db7ef3594416e3124b68c0f8fce95b5aeba229e533635
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: brcm2708-gpu-fw
+Version: 2016-06-08-70143fe9d371cd6486a80d6765e93b5574212b64
+Depends: libc
+Source: package/kernel/brcm2708-gpu-fw
+Section: boot
+Architecture: brcm2708
+Installed-Size: 105
+Filename: brcm2708-gpu-fw_2016-06-08-70143fe9d371cd6486a80d6765e93b5574212b64_brcm2708.ipk
+Size: 794
+MD5Sum: 61c6f9d383f548834a2779975b5543a4
+SHA256sum: ba8bb0054e98434ccd0a9b4e750c6e62bb4b6a65e31bf307bfe917a1b475d31f
+Description:  GPU and kernel boot firmware for brcm2708. 
+
+Package: busybox
+Version: 1.24.2-1
+Depends: libc
+Source: package/utils/busybox
+License: GPL-2.0
+LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
+Section: base
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 223808
+Filename: busybox_1.24.2-1_brcm2708.ipk
+Size: 224371
+MD5Sum: 385d3ceee62603dd8667496b7b876671
+SHA256sum: d52bd1ab54eec53e7309c5b73ac7c1bdf34ca6fdc941f1ce3bc700c7e627f6a6
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.76-1
+Depends: libc
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Require-User: dnsmasq=453:dnsmasq=453
+Architecture: brcm2708
+Installed-Size: 99327
+Filename: dnsmasq_2.76-1_brcm2708.ipk
+Size: 99989
+MD5Sum: 888d75590a4505b576533322f5bd70dd
+SHA256sum: 5481c4cc777526eadd1c8e1fa18f19f6112b0a4bf31381fbcfef4f75da4fc232
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2016.73-1
+Depends: libc
+Source: package/network/services/dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+Architecture: brcm2708
+Installed-Size: 82583
+Filename: dropbear_2016.73-1_brcm2708.ipk
+Size: 83357
+MD5Sum: c729cc508538e774a34f40402e46d392
+SHA256sum: 01cd8327152fd7277aa8fddc88a17b3c445bba82722e21da10fb09ce96a683b6
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2016-01-29
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables, kmod-ipt-core, kmod-ipt-conntrack, kmod-ipt-nat
+Source: package/network/config/firewall
+License: ISC
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 38559
+Filename: firewall_2016-01-29_brcm2708.ipk
+Size: 39298
+MD5Sum: 1945399e515fd29b6ac914b1e841755b
+SHA256sum: aee776a100b30c6d8390b93f744850b919b5f88924e7fc751ad3a75621e004b9
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: fstools
+Version: 2016-05-12-ed224f0b1f9cfb3f8c5766cba3a60343c0eda586
+Depends: libc, ubox
+Source: package/system/fstools
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 17133
+Filename: fstools_2016-05-12-ed224f0b1f9cfb3f8c5766cba3a60343c0eda586_brcm2708.ipk
+Size: 17841
+MD5Sum: ce465256f871dd085162a155a568ccba
+SHA256sum: 9bb7ef9378d5333ca58c0fb58adf666efffa57026c91726a218a2257f0d3933d
+Description:  OpenWrt filesystem tools
+
+Package: ip6tables
+Version: 1.4.21-2
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 211
+Filename: ip6tables_1.4.21-2_brcm2708.ipk
+Size: 900
+MD5Sum: 98a4c685a90c36b7d09bd253b0a13172
+SHA256sum: 979e757d05409ba31f0774978f2c94627740bd686e3d1fa5b81f5c637edc2826
+Description:  IPv6 firewall administration tool
+
+Package: ip
+Version: 4.4.0-1
+Depends: libc, libnl-tiny
+Conflicts: ip-full
+Source: package/network/utils/iproute2
+License: GPL-2.0
+Section: net
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: brcm2708
+Installed-Size: 90709
+Filename: ip_4.4.0-1_brcm2708.ipk
+Size: 91485
+MD5Sum: 747c4550373cd610c6b0a78a859ae8fe
+SHA256sum: 147993d9f18dfa0792acadeb6f5411902065f02d08c4a1f76f6e17de605d8bbe
+Description:  Routing control utility (Minimal)
+
+Package: ipset
+Version: 6.24-1
+Depends: libc, kmod-ipt-ipset, libmnl
+Source: package/network/utils/ipset
+License: GPL-2.0
+Section: net
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 67982
+Filename: ipset_6.24-1_brcm2708.ipk
+Size: 68093
+MD5Sum: 61fb3bdbed0607ad67ae7f68cd9a38db
+SHA256sum: 72c0e0e24ced2282f350319aadb5472ccb32fc5a43aff90e877d9df79202c3eb
+Description:  IPset administration utility
+
+Package: iptables-mod-tproxy
+Version: 1.4.21-2
+Depends: libc, iptables, kmod-ipt-tproxy
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 2665
+Filename: iptables-mod-tproxy_1.4.21-2_brcm2708.ipk
+Size: 3380
+MD5Sum: 133701c21fca19f09bdb797861d5a7fa
+SHA256sum: 6b0dea1f91d7afb0c22f664fc4ba657426a2a9363ecfb40051a9491599de814f
+Description:  Transparent proxy iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables
+Version: 1.4.21-2
+Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 22984
+Filename: iptables_1.4.21-2_brcm2708.ipk
+Size: 23778
+MD5Sum: 6f8046a912ff7fbc095f9c2515a02abd
+SHA256sum: 10948984f62070496b37815de05ef7cf9823f0f2103d4ded0b82b1e9795a5a62
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iw
+Version: 4.3-1
+Depends: libc, libnl-tiny
+Source: package/network/utils/iw
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 35075
+Filename: iw_4.3-1_brcm2708.ipk
+Size: 35819
+MD5Sum: 8e29d4d5d9bdba5dccfeaddb4a5f787e
+SHA256sum: a92a3f0dcd11a99ce2ea526c66798691ddff4dbb55acde256b73870c8a02019c
+Description:  cfg80211 interface configuration utility
+
+Package: jshn
+Version: 2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54
+Depends: libc, libjson-c, libubox, libblobmsg-json
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 5160
+Filename: jshn_2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54_brcm2708.ipk
+Size: 5937
+MD5Sum: cea77754f73c22fc1ca6b621e46a2afa
+SHA256sum: 2afa5c0f6e028990eddb55050e8997240d6b9a828bddf28727a02c22a103d839
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: jsonfilter
+Version: 2016-07-02-dea067ad67d977c247c300c06676a06adf21e0c7
+Depends: libc, libubox, libjson-c
+Source: package/utils/jsonfilter
+License: ISC
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 8086
+Filename: jsonfilter_2016-07-02-dea067ad67d977c247c300c06676a06adf21e0c7_brcm2708.ipk
+Size: 8888
+MD5Sum: 8ee6f9fc8ed78853fc52ae465070da24
+SHA256sum: db46f815d8610a53d37f8cd02205295d251f69d6d5953bb864e40fc6c3472473
+Description:  OpenWrt JSON filter utility
+
+Package: libblobmsg-json
+Version: 2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54
+Depends: libc, libjson-c, libubox
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 3265
+Filename: libblobmsg-json_2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54_brcm2708.ipk
+Size: 3990
+MD5Sum: 71f6ab6c96d3af10bf2147072ad981cb
+SHA256sum: 10f60c7cec597e5355d1af693019c346bdd1a3bff0cb843986d3c8f4ae945d26
+Description:  blobmsg <-> json conversion library
+
+Package: libgcc
+Version: 5.3.0-1
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 17231
+Filename: libgcc_5.3.0-1_brcm2708.ipk
+Size: 17996
+MD5Sum: 4be9e8e9b29e3c217aa8ed7d542d6651
+SHA256sum: 31e19e272f91b21a2e902984e99bf663a485f7ec7567fee8d64a1c4d9db352c0
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.4.21-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: brcm2708
+Installed-Size: 17742
+Filename: libip4tc_1.4.21-2_brcm2708.ipk
+Size: 18459
+MD5Sum: 36ea4cb7b1bd9078e1abb3c8d0644fe4
+SHA256sum: ae006fa294290a0f28760e5163f4ede0addb7207baa094695280d73ab52f078b
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.4.21-2
+Depends: libc, libxtables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: brcm2708
+Installed-Size: 17283
+Filename: libip6tc_1.4.21-2_brcm2708.ipk
+Size: 17993
+MD5Sum: ac6e74104392641fadff48d9c8dcf353
+SHA256sum: 8ceef232035bbf06e76a02055fee8f31e0594c453335c13ab87251b0303273cc
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libiwinfo, liblua
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 6025
+Filename: libiwinfo-lua_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_brcm2708.ipk
+Size: 6818
+MD5Sum: a669b1461e9b7ee7224d178577a083f2
+SHA256sum: c73c06fe918eb268e50339494eada8f9c9afc720b55d5a0ac6d27a43794c3fb0
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo
+Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
+Depends: libc, libuci
+Source: package/network/utils/iwinfo
+License: GPL-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 11586
+Filename: libiwinfo_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_brcm2708.ipk
+Size: 12418
+MD5Sum: d1e6650ac268e2c646d684b48821fe15
+SHA256sum: a878fcb9f85298004a2acd098a670c3fd2f47f04dfbc739a925c8708d3cb88ad
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ madwifi, nl80211 and wext driver interfaces.
+
+Package: libjson-c
+Version: 0.12-1
+Depends: libc
+Source: package/libs/libjson-c
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 14119
+Filename: libjson-c_0.12-1_brcm2708.ipk
+Size: 14820
+MD5Sum: a822941e2c97089950ccc0b6ddf14973
+SHA256sum: 275589cba840ed929357c9f0cb9af4102172aa73ff57786fd0a8383b98eee0d1
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libjson-script
+Version: 2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54
+Depends: libc, libubox
+Source: package/libs/libubox
+License: ISC
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 4425
+Filename: libjson-script_2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54_brcm2708.ipk
+Size: 5166
+MD5Sum: cab508ff3fd9946763e4587db42a5ee5
+SHA256sum: efec60fed57ba80a0033e40e5e087256d4e9729c224959005027d887609cdc00
+Description:  Minimalistic JSON based scripting engine
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 61400
+Filename: liblua_5.1.5-1_brcm2708.ipk
+Size: 62138
+MD5Sum: 1237069dff66dffb48d1cd6b8f82ab16
+SHA256sum: f895027410c3087954d026d6cc352d4acb5c23dd330870674e0ec3788eec8c17
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua shared libraries, needed by other programs.
+
+Package: libmnl
+Version: 1.0.3-2
+Depends: libc
+Source: package/libs/libmnl
+License: LGPL-2.1+
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 5136
+Filename: libmnl_1.0.3-2_brcm2708.ipk
+Size: 6319
+MD5Sum: 9b269cb7907b076d86bb721554193df7
+SHA256sum: 0f8b0cef28948bd569ccdaf77b944176f4fdfb12b3da81c05ec463c576dfc24f
+Description:  libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel. The main features of this library are:
+ .
+ * Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ * Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ * Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building, validating,
+ parsing and sequence tracking, easier.
+ .
+ * Easy to re-use: you can use the library to build your own abstraction layer
+ on top of this library.
+ .
+ * Decoupling: the interdependency of the main bricks that compose the library
+ is reduced, i.e. the library provides many helpers, but the programmer is not
+ forced to use them.
+
+Package: libnl-tiny
+Version: 0.1-5
+Depends: libc
+Source: package/libs/libnl-tiny
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 11994
+Filename: libnl-tiny_0.1-5_brcm2708.ipk
+Size: 12728
+MD5Sum: 5ed7b6f3ee1328bcd274c43505538aa2
+SHA256sum: 8e27afef210ae17cf372ffe23d3e369c5f8aaa2ba04da22ef6000c5e31c9b66a
+Description:  This package contains a stripped down version of libnl
+
+Package: libopenssl
+Version: 1.0.2h-1
+Depends: libc, zlib
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+Architecture: brcm2708
+Installed-Size: 666436
+Filename: libopenssl_1.0.2h-1_brcm2708.ipk
+Size: 660892
+MD5Sum: c0504e35d634394c36695b24bb076930
+SHA256sum: 8eaad62654b2bb9a8815179e5280bb2753eb87bddf71a00d8e9878b0443a78db
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpolarssl
+Version: 1.3.17-1
+Depends: libc
+Source: package/libs/polarssl
+License: GPL-2.0+
+Section: libs
+Architecture: brcm2708
+Installed-Size: 130118
+Filename: libpolarssl_1.3.17-1_brcm2708.ipk
+Size: 130815
+MD5Sum: de7ea13ffe1bdbc868ce1de3e8978ad9
+SHA256sum: a2934ddb84d22d241f6442ce10bebbffb00278b6780a5714ea52cad818b3fff9
+Description:  The aim of the PolarSSL project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the PolarSSL library.
+
+Package: libpthread
+Version: 1.1.14-1
+Depends: libgcc
+Source: package/libs/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 125
+Filename: libpthread_1.1.14-1_brcm2708.ipk
+Size: 867
+MD5Sum: 78a460a74bf78eec4f1f079b6f119696
+SHA256sum: caaecb66304e66ed285f65998810960f0bed0deef42926df9c659662af4ce01e
+Description:  POSIX thread library
+
+Package: libubox
+Version: 2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54
+Depends: libc
+Source: package/libs/libubox
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 17054
+Filename: libubox_2016-07-04-d3fa561e5abcc88e02eb289c24d0b1d4d05adb54_brcm2708.ipk
+Size: 17802
+MD5Sum: c7c288173f83477d5b5dbeb924c7c76f
+SHA256sum: f21d667007d623331ab0c8761dbe41b369bb6b3fb92382919f5030c492a84d97
+Description:  Basic utility library
+
+Package: libubus-lua
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubus, liblua
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 6456
+Filename: libubus-lua_2016-07-02-053be7df871e05478284235732f8b0608089512f_brcm2708.ipk
+Size: 7274
+MD5Sum: 7829566005859a39703eec0b4511ccfa
+SHA256sum: 7115395d30b7aca424ce3d1aad4122beded2e47eec4a1621c3453284834a69d6
+Description:  Lua binding for the OpenWrt RPC client
+
+Package: libubus
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubox
+Source: package/system/ubus
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 9240
+Filename: libubus_2016-07-02-053be7df871e05478284235732f8b0608089512f_brcm2708.ipk
+Size: 9970
+MD5Sum: 0a1f9d60b3dcc50bd3cd9802f956e83c
+SHA256sum: 0189aa206f6c4fdc26c78f8a2cf8d6947ce28158cd17641da3805bc86444b62e
+Description:  OpenWrt RPC client library
+
+Package: libuci-lua
+Version: 2016-07-04.1-1
+Depends: libc, libuci, liblua
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 5743
+Filename: libuci-lua_2016-07-04.1-1_brcm2708.ipk
+Size: 6459
+MD5Sum: 0bc4c340442177218f8764a2bf595a55
+SHA256sum: 43db50cb3f579f247686d86fa0454b2d0cb88172082ba565e084a0b7303ea3e5
+Description:  Lua plugin for UCI
+
+Package: libuci
+Version: 2016-07-04.1-1
+Depends: libc, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 15128
+Filename: libuci_2016-07-04.1-1_brcm2708.ipk
+Size: 15840
+MD5Sum: 2c632e9d6f2db9a6964d9cc3f0954aea
+SHA256sum: 0a2bfff75f5ec32a287bd8937d7e5332a20d3a197c06f5f0bf12c8467a4fa62e
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libuclient
+Version: 2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3
+Depends: libc, libubox
+Source: package/libs/uclient
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 8767
+Filename: libuclient_2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3_brcm2708.ipk
+Size: 9530
+MD5Sum: 3e11c83f93170c02e127cae59fc0197a
+SHA256sum: a7d5f54061888486630ec69689ee42b3062cef490be5c98974845398a68e3b7d
+Description:  HTTP/1.1 client library
+
+Package: libustream-polarssl
+Version: 2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6
+Depends: libc, libubox, libpolarssl
+Source: package/libs/ustream-ssl
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 3329
+Filename: libustream-polarssl_2016-07-02-ec80adaa1b47f28d426fa19c692011ce60b992d6_brcm2708.ipk
+Size: 4056
+MD5Sum: 0775bc94a6ab3cbeb526822cf95b1e70
+SHA256sum: 56c6403320c2c17c2db2d17e9a5ca7cccf8b30780c5ab6df0ca27ce751f15c9a
+Description:  ustream SSL Library (polarssl)
+
+Package: libxtables
+Version: 1.4.21-2
+Depends: libc
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: libs
+Architecture: brcm2708
+Installed-Size: 38469
+Filename: libxtables_1.4.21-2_brcm2708.ipk
+Size: 39210
+MD5Sum: 65087b4964923ef9c6d6e66be3a6fa7e
+SHA256sum: 5e07905ec99c4b023c7cbfaa726b5efc543e1f99e037719efd4677c21bf393c6
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: logd
+Version: 2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a
+Depends: libc, libubox, libubus, libblobmsg-json
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 9024
+Filename: logd_2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a_brcm2708.ipk
+Size: 9805
+MD5Sum: 1fa0a2bd38701a5821d9e236797a5c75
+SHA256sum: 3e1adc47b7157abcbc858161bcc186350db60867c14002d0b84370f832e7f263
+Description:  OpenWrt system log implementation
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, liblua
+Source: package/utils/lua
+License: MIT
+LicenseFiles: COPYRIGHT
+Section: lang
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 4370
+Filename: lua_5.1.5-1_brcm2708.ipk
+Size: 5177
+MD5Sum: 1e23b3d78f5732c6eaf10b746f49b17c
+SHA256sum: b524c04382f5f3b8009283167bb3948c3d7bdbd81bdf0d80c06c2d97a002f143
+Description:  Lua is a powerful light-weight programming language designed for extending 
+ applications. Lua is also frequently used as a general-purpose, stand-alone 
+ language. Lua is free software.
+ This package contains the Lua language interpreter.
+
+Package: luci-app-shadowsocks-spec
+Version: 1.5.0-1
+Depends: libc, shadowsocks-libev-spec
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 3704
+Filename: luci-app-shadowsocks-spec_1.5.0-1_all.ipk
+Size: 4591
+MD5Sum: 9460e9371d728385b3c68b324ecbe77c
+SHA256sum: 1f6630066b5404d174199023c8f07e9c89191e243774724380589afafd4ec612
+Description:  LuCI Support for shadowsocks-libev-spec.
+
+Package: mtd
+Version: 21
+Depends: libc, libubox
+Source: package/system/mtd
+License: GPL-2.0+
+Section: utils
+Architecture: brcm2708
+Installed-Size: 11474
+Filename: mtd_21_brcm2708.ipk
+Size: 12197
+MD5Sum: 587e99b0b7f55d5d7a52b1ebb35c57f1
+SHA256sum: 5f6843661214800a43fcb92a6a594b8437f94393b1154ced56bfe2f9506e988f
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2016-06-06-99e6dc68bbac5a57a0ebca810a9dc36e38667821
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, libubox
+Source: package/network/config/netifd
+License: GPL-2.0
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 62290
+Filename: netifd_2016-06-06-99e6dc68bbac5a57a0ebca810a9dc36e38667821_brcm2708.ipk
+Size: 63083
+MD5Sum: a576efd583107715b7ee7e066ed990e2
+SHA256sum: ffd1cee57845f26cb68717518c4187cefad297729a76153555b22086f80be7a0
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: odhcp6c
+Version: 2016-06-30-7533a6243dc3ac5a747cf6ccbc4d0539dafd3e07
+Depends: libc
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: brcm2708
+Installed-Size: 23081
+Filename: odhcp6c_2016-06-30-7533a6243dc3ac5a747cf6ccbc4d0539dafd3e07_brcm2708.ipk
+Size: 23817
+MD5Sum: e018da9594caa36378d853f27d8f2a47
+SHA256sum: f65ba3321206ef8cb157ff9186dee7cfb9345ad81a306a825739a2b2c812cb40
+Description:  Embedded DHCPv6-client for OpenWrt
+
+Package: odhcpd
+Version: 2015-11-19-01d3f9d64486ac1daa144848944e877e7f0cb762
+Depends: libc, libubox, libuci, libubus
+Source: package/network/services/odhcpd
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: brcm2708
+Installed-Size: 29688
+Filename: odhcpd_2015-11-19-01d3f9d64486ac1daa144848944e877e7f0cb762_brcm2708.ipk
+Size: 30635
+MD5Sum: 67c7a534ec745999832fea445515deef
+SHA256sum: 8bb9a54c9638006438b178d02b785e86290e2ce987c527bbf4cd2c80dc980cc9
+Description:  odhcpd is a daemon for serving and relaying IP management protocols to
+ configure clients and downstream routers. It tries to follow the RFC 6204
+ requirements for IPv6 home routers.
+ 
+ odhcpd provides server services for DHCP, RA, stateless and stateful DHCPv6,
+ prefix delegation and can be used to relay RA, DHCPv6 and NDP between routed
+ (non-bridged) interfaces in case no delegated prefixes are available.
+
+Package: opkg
+Version: 9c97d5ecd795709c8584e972bfdf3aee3a5b846d-12
+Depends: libc, uclient-fetch
+Source: package/system/opkg
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: base
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 58834
+Filename: opkg_9c97d5ecd795709c8584e972bfdf3aee3a5b846d-12_brcm2708.ipk
+Size: 59803
+MD5Sum: 89954f48f02a6dda5703d6ae771deb4a
+SHA256sum: 5c870293f3a53b162f3dc2779953f73ddec33323a5ba889126d32c5ba6714093
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: ppp-mod-pppoe
+Version: 2.4.7-9
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 10273
+Filename: ppp-mod-pppoe_2.4.7-9_brcm2708.ipk
+Size: 11020
+MD5Sum: f4f93badf7123d1e98f97f69322916ba
+SHA256sum: 13a6ac4709c5d4af4396430531c464cef67589e8722e60db861ed3a448bf82a0
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-9
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 107222
+Filename: ppp_2.4.7-9_brcm2708.ipk
+Size: 107922
+MD5Sum: 64734fcad56733d6e3041562b533d9e0
+SHA256sum: 6fd72f4dd616c04a369d36d3da0114f7bba44473416dc5f95ec59a9da5300dcd
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: procd
+Version: 2016-07-07-02d56c03115276aa4e2203ddbd411c3e587cf08f
+Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
+Source: package/system/procd
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 35862
+Filename: procd_2016-07-07-02d56c03115276aa4e2203ddbd411c3e587cf08f_brcm2708.ipk
+Size: 36525
+MD5Sum: 6ccda94e3b42b5e2255d5536f76e16d0
+SHA256sum: 716dd2ea408be915560f4145214a0337a97b1f10d147c67b839a141dd260cd0e
+Description:  OpenWrt system process manager
+
+Package: px5g
+Version: 4
+Depends: libc, libpolarssl
+Source: package/utils/px5g
+License: LGPL-2.1
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 3544
+Filename: px5g_4_brcm2708.ipk
+Size: 4315
+MD5Sum: ba018a75de0129ccb3200bb27cd5a971
+SHA256sum: a9c0dbf182311afa57ec2f488b3f52285bbc073709e46ffc19abe4a47239e346
+Description:  Px5g is a tiny standalone X.509 certificate generator.
+ It suitable to create key files and certificates in DER
+ and PEM format for use with stunnel, uhttpd and others.
+
+Package: rpcd
+Version: 2016-06-30-23417e94d25570e6d62542bac46edd51e8e0243a
+Depends: libc, libubus, libubox, libuci, libblobmsg-json
+Source: package/system/rpcd
+License: ISC
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 17511
+Filename: rpcd_2016-06-30-23417e94d25570e6d62542bac46edd51e8e0243a_brcm2708.ipk
+Size: 18235
+MD5Sum: cb67d6ce9961876731cd75d8b00be586
+SHA256sum: d564ced59faaa301a4e86e953cd60503f61a4286f058a0d17f5c937266d3bdfb
+Description:  This package provides the UBUS RPC backend server to expose various
+ functionality to frontend programs via JSON-RPC.
+
+Package: rtl8192cu-firmware
+Version: 2016-01-25-52442afee9907bc32a058f22bb3295d040677c26-1
+Depends: libc
+Source: package/firmware/linux-firmware
+Section: firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 16956
+Filename: rtl8192cu-firmware_2016-01-25-52442afee9907bc32a058f22bb3295d040677c26-1_brcm2708.ipk
+Size: 17590
+MD5Sum: 89f7f732851707d382bab91ea60793f4
+SHA256sum: d2be451baa46ca272dbf9580a02f5ecd11ac3ba30ee70499d7eb1995aef1c143
+Description:  RealTek RTL8192CU firmware
+
+Package: shadowsocks-libev-spec
+Version: 2.4.8-2
+Depends: libc, libopenssl, libpthread, ipset, ip
+Source: package/openwrt-shadowsocks-master
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: brcm2708
+Installed-Size: 125269
+Filename: shadowsocks-libev-spec_2.4.8-2_brcm2708.ipk
+Size: 126127
+MD5Sum: c0013fad963d27cb1ec927f8608673b1
+SHA256sum: 985cea475b091b2285c184384ed4b706e5f19fde52eaa82412b7fe4427458e34
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: ubox
+Version: 2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a
+Depends: libc, libubox, ubusd, ubus, libubus, libuci
+Source: package/system/ubox
+License: GPL-2.0
+Section: base
+Maintainer: John Crispin <blogic@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 14149
+Filename: ubox_2016-07-19-aead2c0cbffdda9b46d74a998a4c6aeef423b21a_brcm2708.ipk
+Size: 14872
+MD5Sum: af968a268e860210b5f8c163a50c25da
+SHA256sum: 4d633aec135afee74baeddd893f676edc7ddbf85a4b2b6fff52a3c367b558a37
+Description:  OpenWrt system helper toolbox
+
+Package: ubus
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubus, libblobmsg-json, ubusd
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 4679
+Filename: ubus_2016-07-02-053be7df871e05478284235732f8b0608089512f_brcm2708.ipk
+Size: 5434
+MD5Sum: eaaff1aeeaa20cfd90065e56d9151715
+SHA256sum: 11aba19b153e6935597e29939d6a3ba293cda6ca36d38d1cbb4dc276eda954a4
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2016-07-02-053be7df871e05478284235732f8b0608089512f
+Depends: libc, libubox, libblobmsg-json
+Source: package/system/ubus
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 9637
+Filename: ubusd_2016-07-02-053be7df871e05478284235732f8b0608089512f_brcm2708.ipk
+Size: 10389
+MD5Sum: c523381f7f6ae05f4003fd49abf270cb
+SHA256sum: 25f3b3b1285af8f57df4f887e6eee64c0991d3d4d4da2284fe0e2606968ed8a6
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2016-07-04.1-1
+Depends: libc, libuci
+Source: package/system/uci
+License: LGPL-2.1
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 6487
+Filename: uci_2016-07-04.1-1_brcm2708.ipk
+Size: 7203
+MD5Sum: 798447d3018b50f16207d39e64a3ad18
+SHA256sum: 59c95bf7500b96ab260f8bf098a51831930a95e172d400e0083cb7e3099dc09c
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: uclient-fetch
+Version: 2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3
+Depends: libc, libuclient
+Source: package/libs/uclient
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 6699
+Filename: uclient-fetch_2016-01-28-2e0918c7e0612449024caaaa8d44fb2d7a33f5f3_brcm2708.ipk
+Size: 7485
+MD5Sum: 2fcbc03ef986ae9392d902c3805323e0
+SHA256sum: 52f10a5eec8557b1acdb50a8c0c4029a69ac5c3cb7fa6a9eae51e5f2d3d66a80
+Description:  Tiny wget replacement using libuclient
+
+Package: uhttpd-mod-ubus
+Version: 2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7
+Depends: libc, uhttpd, libubus, libblobmsg-json
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 5631
+Filename: uhttpd-mod-ubus_2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7_brcm2708.ipk
+Size: 6454
+MD5Sum: a8adf2c103b660b92b564a1800cc4ac7
+SHA256sum: 727f9dda5be75c5ae35cfe1cdafad6f07a4da5a521a7d28d3edd07755bb99300
+Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
+ session.* namespace and procedures.
+
+Package: uhttpd
+Version: 2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7
+Depends: libc, libubox, libblobmsg-json, libjson-script
+Source: package/network/services/uhttpd
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 21769
+Filename: uhttpd_2015-11-08-fe01ef3f52adae9da38ef47926cd50974af5d6b7_brcm2708.ipk
+Size: 22556
+MD5Sum: 0d6ed4a99fd7f86dba98a7aa17806dc3
+SHA256sum: 889a6163770a2505e56e9a2d894bfd7d931ea9f6acbb6d32eced49b128e6deeb
+Description:  uHTTPd is a tiny single threaded HTTP server with TLS, CGI and Lua
+ support. It is intended as a drop-in replacement for the Busybox
+ HTTP daemon.
+
+Package: usign
+Version: 2016-07-04-ef6419142a3b0fbcddcccf536e3c1880302c6f89
+Depends: libc, libubox
+Source: package/system/usign
+License: ISC
+Section: base
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 10382
+Filename: usign_2016-07-04-ef6419142a3b0fbcddcccf536e3c1880302c6f89_brcm2708.ipk
+Size: 11130
+MD5Sum: e3808aa2ec0fce0264d98a0e3ebd51a5
+SHA256sum: 3308b838824cf8eb449b720b1de9be04f1e0be4cbd342eef167969a0a5e5321d
+Description:  OpenWrt signature verification utility
+
+Package: wireless-tools
+Version: 29-5
+Depends: libc
+Source: package/network/utils/wireless-tools
+License: GPL-2.0
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 21844
+Filename: wireless-tools_29-5_brcm2708.ipk
+Size: 22617
+MD5Sum: 24b1243f372b0057fe72ac6ff27a3750
+SHA256sum: d60e2fd6d4a29225d773aa4ff6ab2c71c85aa6e995f7ae3a9415cc36dde3fbd2
+Description:  This package contains a collection of tools for configuring wireless
+ adapters implementing the "Linux Wireless Extensions".
+
+Package: zlib
+Version: 1.2.8-1
+Depends: libc
+Source: package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+Architecture: brcm2708
+Installed-Size: 38533
+Filename: zlib_1.2.8-1_brcm2708.ipk
+Size: 39268
+MD5Sum: 169f8e3484f2ac2fe30aa1212cdf9484
+SHA256sum: 6a70c60b7df5129d5d03ad071a81440c3887d1531858b53588429f7fff8c0858
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+

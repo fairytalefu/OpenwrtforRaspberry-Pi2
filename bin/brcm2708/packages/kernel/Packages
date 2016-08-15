@@ -1,0 +1,451 @@
+Package: kmod-fs-vfat
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nls-base
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 38814
+Filename: kmod-fs-vfat_4.4.14-1_brcm2708.ipk
+Size: 39535
+MD5Sum: 1cd94af7d5c1ac13737b5b8e1acfeb97
+SHA256sum: 1c0cd0d0cfa23b65e9b74107529a40053b71e0df0793a35794ee2adfe0e8222b
+Description:  Kernel module for VFAT filesystem support
+
+Package: kmod-hid-generic
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-hid
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 1016
+Filename: kmod-hid-generic_4.4.14-1_brcm2708.ipk
+Size: 1827
+MD5Sum: 1d61ff0bc66a040b20e4fae8d97ca2b2
+SHA256sum: dff3f55a5b2979f9c5c501597c6f1efbf8e231aee71531b4f47f1f245126a5b4
+Description:  Generic HID device support
+
+Package: kmod-hid
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-input-core, kmod-input-evdev
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 43470
+Filename: kmod-hid_4.4.14-1_brcm2708.ipk
+Size: 42357
+MD5Sum: fa2b8bb0155942e95b0412664d1f3deb
+SHA256sum: 2de3c0a20353a5d78273c42d4f8faaa33c28d15b56313ba7c513b98f4fc05b40
+Description:  Kernel modules for HID devices
+
+Package: kmod-input-core
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 105
+Filename: kmod-input-core_4.4.14-1_brcm2708.ipk
+Size: 835
+MD5Sum: 1a27aec6fb4357dd2f1ee6d3192d94bb
+SHA256sum: 3d06f36e34989078a510604f1af67dc67ff0406aca341ce1620642c9f20928ee
+Description:  Kernel modules for support of input device
+
+Package: kmod-input-evdev
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-input-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 7673
+Filename: kmod-input-evdev_4.4.14-1_brcm2708.ipk
+Size: 8491
+MD5Sum: 3ba77a5a7b9990f894509fdf78382d8f
+SHA256sum: 6a348acd280167b9fec9056e84d4d1600d12957115d1691d8e34a33fe3852ff0
+Description:  Kernel modules for support of input device events
+
+Package: kmod-ip6tables
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nf-ipt6, kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 9132
+Filename: kmod-ip6tables_4.4.14-1_brcm2708.ipk
+Size: 9980
+MD5Sum: 0d702ef26dcf0918ccdefc9b04fd5c9b
+SHA256sum: 3c013da0eeef9034309540c7387e1e429030b3b7699efcc91e14a180090113c4
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 5928
+Filename: kmod-ipt-conntrack_4.4.14-1_brcm2708.ipk
+Size: 6800
+MD5Sum: c91a9ba6f5ce7a555405cb2a6f64b28d
+SHA256sum: 17d8c7aa2fbf8f10fbc2038449f5d3bb375894ed682f2a32bc3a41b9b13ace6f
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nf-ipt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 18390
+Filename: kmod-ipt-core_4.4.14-1_brcm2708.ipk
+Size: 19286
+MD5Sum: 0b10bcd8419e856311c964f33427c324
+SHA256sum: b97b71be336f09df8ee31a1ccabf433e0857188c948d626e43e71756f7cc01f1
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-ipset
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-ipt-core, kmod-nfnetlink
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 119125
+Filename: kmod-ipt-ipset_4.4.14-1_brcm2708.ipk
+Size: 119516
+MD5Sum: b85d8c0462d29d34edd937c17a9b7f1c
+SHA256sum: 6bda389bb30efa4a929051d037c22c0caf9e6ee409f8fc8d8a029c8007a8dd70
+Description:  IPset netfilter modules
+
+Package: kmod-ipt-nat
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 4929
+Filename: kmod-ipt-nat_4.4.14-1_brcm2708.ipk
+Size: 5808
+MD5Sum: 196b9e92f7749971ea13de944417cc6d
+SHA256sum: dfc6357d6616b008d33dcbc0e233e208a7b012f0ae8d6ce9939e72065ae84369
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-tproxy
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-ipt-conntrack, kmod-ip6tables, kmod-ipt-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 5739
+Filename: kmod-ipt-tproxy_4.4.14-1_brcm2708.ipk
+Size: 6573
+MD5Sum: 0aab3a49cf7c750355b5051db0807de1
+SHA256sum: 5e855d51badd534d5c9d7f88d9cb7f41bf2252fedb917bcea6f9045ccf3fb33d
+Description:  Kernel modules for Transparent Proxying
+
+Package: kmod-lib-crc-ccitt
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 1471
+Filename: kmod-lib-crc-ccitt_4.4.14-1_brcm2708.ipk
+Size: 2287
+MD5Sum: ef9d999b82f802df21ca9be749e623a1
+SHA256sum: 75233b66f9a1bee2f197437b2b31bc190d6ca1fe8ddbc14abc0526e8abe839fb
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-nf-conntrack6
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nf-conntrack
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 10120
+Filename: kmod-nf-conntrack6_4.4.14-1_brcm2708.ipk
+Size: 10962
+MD5Sum: 05fc1ff254d233d04da44e4cd4f9dd8c
+SHA256sum: 2aa955a4107f67ecf6551f4c0bfe2b164d58e3c30e03f28df5f62dcf826eb622
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 42189
+Filename: kmod-nf-conntrack_4.4.14-1_brcm2708.ipk
+Size: 43016
+MD5Sum: c8e642d3132d1cbc9f5321d24cc4d397
+SHA256sum: a51f99595d161c7dc645b91cae4eb8c5dcf49cf1a84ae8bee9c76df56001bec8
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-ipt6
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nf-ipt, kmod-nf-conntrack6
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 8233
+Filename: kmod-nf-ipt6_4.4.14-1_brcm2708.ipk
+Size: 9044
+MD5Sum: 6b982b3c016b5b45316b8b3f4c76e619
+SHA256sum: a0b01d8d0a58439947cfbb76ed0087ac422bcfb7e0d95c4875c02931848405b5
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 15515
+Filename: kmod-nf-ipt_4.4.14-1_brcm2708.ipk
+Size: 16256
+MD5Sum: 58af611286bcade89e641ce4632af0a9
+SHA256sum: dc232195031cfb16cb8cb1ea867054b78182b3cdfefc2abcb1eec766d4361e04
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nf-conntrack, kmod-nf-ipt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 11466
+Filename: kmod-nf-nat_4.4.14-1_brcm2708.ipk
+Size: 12296
+MD5Sum: 9909fbd5801a468d6fff65ecd6ee8de4
+SHA256sum: f9550b22bf9b79607a5a6c0ce41cfe4dd1a8b0be6ab24a3ab9f9606a78d6884c
+Description:  Netfilter NAT
+
+Package: kmod-nfnetlink
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 4305
+Filename: kmod-nfnetlink_4.4.14-1_brcm2708.ipk
+Size: 5099
+MD5Sum: f62b0e6449d334eb1dc8c8b1be560adc
+SHA256sum: 70a748fdfc5e496a020fb4134ff0077ecb043d00a2844523122fdfb1154d2681
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nls-base
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56)
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 105
+Filename: kmod-nls-base_4.4.14-1_brcm2708.ipk
+Size: 844
+MD5Sum: 2762b88eb3f22b966bf4d56ecbbf0ada
+SHA256sum: f0b8002d5d13865bad48986abc710d5a39bf47033965340b8b129b68caeb0c76
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-nls-cp437
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nls-base
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 2334
+Filename: kmod-nls-cp437_4.4.14-1_brcm2708.ipk
+Size: 3153
+MD5Sum: e6f3853b3c1ce0ecf4d8ad862b0ffd7e
+SHA256sum: 764e1d2fea5e2345c0593477631c88a18193b00b11a5f7bba8e4213be8c77f36
+Description:  Kernel module for NLS Codepage 437 (United States, Canada)
+
+Package: kmod-nls-iso8859-1
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nls-base
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 2014
+Filename: kmod-nls-iso8859-1_4.4.14-1_brcm2708.ipk
+Size: 2828
+MD5Sum: 351573ef8a8f9afad49344fd8ac57034
+SHA256sum: f0627262aa31a2a879561a1cff58bed260543d0d79bf9cb69e9062b77e64ac87
+Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
+
+Package: kmod-ppp
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 20499
+Filename: kmod-ppp_4.4.14-1_brcm2708.ipk
+Size: 21253
+MD5Sum: 18d39315b0bff00c2217236db0af9afa
+SHA256sum: 09a0774b17b56e1a9249af6ea39cd7ab83f770e8543c469ffb66a774fc5b5ccd
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 7384
+Filename: kmod-pppoe_4.4.14-1_brcm2708.ipk
+Size: 8186
+MD5Sum: 7e379a83a4b3c2a425bdf478ab1e2533
+SHA256sum: f1699879ed76183c783e6e10f12fd2f34cc57bbd4261a25de5770b0381334498
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-ppp
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 1758
+Filename: kmod-pppox_4.4.14-1_brcm2708.ipk
+Size: 2531
+MD5Sum: ec910a6243d062917f4d5c69961151dd
+SHA256sum: 97416b1bd53bf5c43879f36047289fc1461d0d65d3ebfefe25405e66cef6a709
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-slhc
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 3707
+Filename: kmod-slhc_4.4.14-1_brcm2708.ipk
+Size: 4430
+MD5Sum: 548efa7b324d4abe7923748f0bd9f545
+SHA256sum: 29089643875e835a5ec9ed92050d6338ada7943d4ad43a958848b253d1467488
+Description:  Serial Line Header Compression
+
+Package: kmod-sound-arm-bcm2835
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-sound-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 10916
+Filename: kmod-sound-arm-bcm2835_4.4.14-1_brcm2708.ipk
+Size: 11707
+MD5Sum: 81c3b5cee6968913d876f8ef29e301af
+SHA256sum: 1768dabcb025cbda016b0959a3d28a5890c3fb04e6c96fdce166c90852668e16
+Description:  This package contains the BCM2835 ALSA pcm card driver
+
+Package: kmod-sound-core
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-input-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 114863
+Filename: kmod-sound-core_4.4.14-1_brcm2708.ipk
+Size: 115527
+MD5Sum: 9b50cfa09e2f8f72a1abd8b4adce4ca6
+SHA256sum: d6993ec011bed7fe422dd6ad88a5246464b72019220a2d9be6813a70ad6325f0
+Description:  Kernel modules for sound support
+
+Package: kmod-usb-core
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nls-base
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 239
+Filename: kmod-usb-core_4.4.14-1_brcm2708.ipk
+Size: 1027
+MD5Sum: 4e2cf523de373830394a2707bdb60dc1
+SHA256sum: 279b3f38d0a6524c1d342c3b1314dbf36fd26e7973575dd5ee25911d2ca26cc9
+Description:  Kernel support for USB
+
+Package: kmod-usb-hid
+Version: 4.4.14-1
+Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-hid, kmod-hid-generic, kmod-input-evdev, kmod-usb-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Status: unknown hold not-installed
+Architecture: brcm2708
+Installed-Size: 17334
+Filename: kmod-usb-hid_4.4.14-1_brcm2708.ipk
+Size: 18103
+MD5Sum: bd01d89bf0d71706c7e8932d7daad60d
+SHA256sum: 38d0c74b89131be5946e52b7a39305225cda825070867edc7aaef51385a2aa64
+Description:  Kernel support for USB HID devices such as keyboards and mice
+
