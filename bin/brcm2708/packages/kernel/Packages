@@ -1,3 +1,17 @@
+Package: kmod-cfg80211
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), iw
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 131325
+Filename: kmod-cfg80211_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 131324
+MD5Sum: eac7222714be650b72f13c64bd447e97
+SHA256sum: 05da1347021d512c14d086dbb9786a08ee3d796fc93e92a556c239f733ca8e88
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
 Package: kmod-fs-vfat
 Version: 4.4.14-1
 Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nls-base
@@ -194,6 +208,20 @@ MD5Sum: ef9d999b82f802df21ca9be749e623a1
 SHA256sum: 75233b66f9a1bee2f197437b2b31bc190d6ca1fe8ddbc14abc0526e8abe839fb
 Description:  Kernel module for CRC-CCITT support
 
+Package: kmod-mac80211
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), kmod-cfg80211, hostapd-common
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 239286
+Filename: kmod-mac80211_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 237632
+MD5Sum: 01e40067fc2b97ee8ada7d22e2cb12be
+SHA256sum: 71e40a2df807854d5c1f9156056dc05ebca73abb0a83b62ce48260d7c49b9c50
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
 Package: kmod-nf-conntrack6
 Version: 4.4.14-1
 Depends: kernel (=4.4.14-1-ccbad455726acee583529af54a914f56), kmod-nf-conntrack
@@ -373,6 +401,96 @@ Size: 2531
 MD5Sum: ec910a6243d062917f4d5c69961151dd
 SHA256sum: 97416b1bd53bf5c43879f36047289fc1461d0d65d3ebfefe25405e66cef6a709
 Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-rtl8192c-common
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), kmod-rtlwifi
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 17142
+Filename: kmod-rtl8192c-common_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 17928
+MD5Sum: 16664732185bc8a9d713185367cac8d4
+SHA256sum: 836c5857414266db5846a0e02d151f0c23983da58311ba529be4175760e8d6d1
+Description:  Realtek RTL8192CE/RTL8192CU common support module
+
+Package: kmod-rtl8192cu
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), kmod-rtlwifi-usb, kmod-rtl8192c-common, rtl8192cu-firmware
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 25531
+Filename: kmod-rtl8192cu_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 26253
+MD5Sum: d59c64dbb50fad7ed1bc01af8a21ed45
+SHA256sum: af544c83da3a0f80271d62ee59211c56eb609f07e1dec5596488a6263c4e06b4
+Description:  Realtek RTL8192CU/RTL8188CU support
+
+Package: kmod-rtl8xxxu
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), kmod-usb-core, kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 39746
+Filename: kmod-rtl8xxxu_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 40890
+MD5Sum: 79d31d81c6647a6656544536f5ef3a01
+SHA256sum: a6a007358fed579b2b9e954ef5944af5433bf24d8fdb15ab88c564c96eebab4b
+Description:  This is an alternative driver for various Realtek RTL8XXX
+ parts written to utilize the Linux mac80211 stack.
+ The driver is known to work with a number of RTL8723AU,
+ RL8188CU, RTL8188RU, RTL8191CU, and RTL8192CU devices
+ 
+ This driver is under development and has a limited feature
+ set. In particular it does not yet support 40MHz channels
+ and power management. However it should have a smaller
+ memory footprint than the vendor drivers and benetifs
+ from the in kernel mac80211 stack.
+ 
+ It can coexist with drivers from drivers/staging/rtl8723au,
+ drivers/staging/rtl8192u, and drivers/net/wireless/rtlwifi,
+ but you will need to control which module you wish to load.
+ 
+ RTL8XXXU_UNTESTED is enabled
+ This option enables detection of Realtek 8723/8188/8191/8192 WiFi
+ USB devices which have not been tested directly by the driver
+ author or reported to be working by third parties.
+ 
+ Please report your results!
+
+Package: kmod-rtlwifi-usb
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), kmod-usb-core, kmod-rtlwifi
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 7010
+Filename: kmod-rtlwifi-usb_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 7889
+MD5Sum: 465c95cf6a6c18a1fdbde8c25b52d1e7
+SHA256sum: af25b6d91bf16d8ef870cf1b60154154239ec2b16e578da2aa5644124f469dc9
+Description:  Realtek common driver part (USB support)
+
+Package: kmod-rtlwifi
+Version: 4.4.14+2016-05-12-1
+Depends: kernel (=4.4.14-1-096d2a960a005a1381217498e4da7a13), kmod-mac80211
+Source: package/kernel/mac80211
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 28594
+Filename: kmod-rtlwifi_4.4.14+2016-05-12-1_brcm2708.ipk
+Size: 29240
+MD5Sum: c26c9e6011a9dce8298c3bbb2e747212
+SHA256sum: 5ff580c149a0d3d287a27d076f4ce8a5517b0704c18933f1cfd11b3dddf2ffaf
+Description:  Realtek common driver part
 
 Package: kmod-slhc
 Version: 4.4.14-1

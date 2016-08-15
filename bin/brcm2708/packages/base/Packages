@@ -104,6 +104,21 @@ MD5Sum: ce465256f871dd085162a155a568ccba
 SHA256sum: 9bb7ef9378d5333ca58c0fb58adf666efffa57026c91726a218a2257f0d3933d
 Description:  OpenWrt filesystem tools
 
+Package: hostapd-common
+Version: 2016-06-15-1
+Depends: libc
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 5329
+Filename: hostapd-common_2016-06-15-1_brcm2708.ipk
+Size: 6039
+MD5Sum: 2c78fa3e87aee6514ecacd1ba549b4f9
+SHA256sum: 551e73bb1a7efc6a83173fb38c3d6e5e74b0a476066c272b57c4ea66e9be6c28
+Description:  hostapd/wpa_supplicant common support files
+
 Package: ip6tables
 Version: 1.4.21-2
 Depends: libc, kmod-ip6tables, iptables
@@ -331,27 +346,27 @@ License: GPL-2.0
 Section: lang
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: brcm2708
-Installed-Size: 6025
+Installed-Size: 6725
 Filename: libiwinfo-lua_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_brcm2708.ipk
-Size: 6818
-MD5Sum: a669b1461e9b7ee7224d178577a083f2
-SHA256sum: c73c06fe918eb268e50339494eada8f9c9afc720b55d5a0ac6d27a43794c3fb0
+Size: 7545
+MD5Sum: 2cef3538144c2aec797a8ebed450fb17
+SHA256sum: c55ed1125bbd105d75b12a840c0fe254c991470aac917521d9f834146ac83544
 Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
  backends.
 
 Package: libiwinfo
 Version: 2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf
-Depends: libc, libuci
+Depends: libc, libnl-tiny, libuci
 Source: package/network/utils/iwinfo
 License: GPL-2.0
 Section: libs
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: brcm2708
-Installed-Size: 11586
+Installed-Size: 23216
 Filename: libiwinfo_2016-01-25-e4aca3910dff532ed878d0ceaf1ab6e8ad7719bf_brcm2708.ipk
-Size: 12418
-MD5Sum: d1e6650ac268e2c646d684b48821fe15
-SHA256sum: a878fcb9f85298004a2acd098a670c3fd2f47f04dfbc739a925c8708d3cb88ad
+Size: 24032
+MD5Sum: 26e4b6031baccaf120ad9197f01507da
+SHA256sum: caea84d467422f7de22722407c356912caba69d7a68bdf5b7436ad4975ac7c63
 Description:  Wireless information library with consistent interface for proprietary Broadcom,
  madwifi, nl80211 and wext driver interfaces.
 
@@ -440,6 +455,34 @@ Description:  libmnl is a minimalistic user-space library oriented to Netlink de
  is reduced, i.e. the library provides many helpers, but the programmer is not
  forced to use them.
 
+Package: libnl-core
+Version: 3.2.21-1
+Depends: libc, libpthread
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: brcm2708
+Installed-Size: 35732
+Filename: libnl-core_3.2.21-1_brcm2708.ipk
+Size: 36217
+MD5Sum: 23b71b07dba45ebdea62344d7f61cee4
+SHA256sum: 1ba0084150527cff2a6350cfcfbf6457aa4415ad5fa102272238694772d3a39a
+Description:  Common code for all netlink libraries
+
+Package: libnl-genl
+Version: 3.2.21-1
+Depends: libc, libnl-core
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: brcm2708
+Installed-Size: 6796
+Filename: libnl-genl_3.2.21-1_brcm2708.ipk
+Size: 7421
+MD5Sum: 8a5f5aa04b8b9e05ecaa2922d996530a
+SHA256sum: 15eec48f5856a365a11803ac9a0606d50f40ba8bbeb77d1ee6bbf83542de1214
+Description:  Generic Netlink Library Functions
+
 Package: libnl-tiny
 Version: 0.1-5
 Depends: libc
@@ -473,6 +516,22 @@ Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
  as a full-strength general purpose cryptography library.
  This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpcap
+Version: 1.7.4-1
+Depends: libc
+Source: package/libs/libpcap
+License: BSD-3-Clause
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 89114
+Filename: libpcap_1.7.4-1_brcm2708.ipk
+Size: 89669
+MD5Sum: fa4d2606620499f754c438ac9b13e75a
+SHA256sum: 7474e5b8fb9c5708480484e27cafacae0007ebbfd1f61f02250b226f8f38cc6e
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
 
 Package: libpolarssl
 Version: 1.3.17-1
@@ -1010,6 +1069,21 @@ MD5Sum: 24b1243f372b0057fe72ac6ff27a3750
 SHA256sum: d60e2fd6d4a29225d773aa4ff6ab2c71c85aa6e995f7ae3a9415cc36dde3fbd2
 Description:  This package contains a collection of tools for configuring wireless
  adapters implementing the "Linux Wireless Extensions".
+
+Package: wpad-mini
+Version: 2016-06-15-1
+Depends: libc, libnl-tiny, hostapd-common, libubus
+Source: package/network/services/hostapd
+License: BSD-3-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: brcm2708
+Installed-Size: 264411
+Filename: wpad-mini_2016-06-15-1_brcm2708.ipk
+Size: 265041
+MD5Sum: 5720e3fd9f0ebe1a3a5fc7b98a82d236
+SHA256sum: d99ac50b01257b741fbf88d16b91cb6f517db6a5de6a813d2d3f7e0c8024e22e
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
 
 Package: zlib
 Version: 1.2.8-1

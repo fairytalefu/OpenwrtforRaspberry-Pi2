@@ -1,1 +1,53 @@
+Package: aircrack-ng
+Version: 1.2-rc1-1
+Depends: libc, libpcap, libpthread, libopenssl, libnl-core, libnl-genl, zlib
+Source: feeds/packages/net/aircrack-ng
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Rick Farina <zerochaos@gentoo.org>
+Architecture: brcm2708
+Installed-Size: 428583
+Filename: aircrack-ng_1.2-rc1-1_brcm2708.ipk
+Size: 428714
+MD5Sum: 3f56638a8aeaa7377ae9384948c5d754
+SHA256sum: 696685313fed9e868e12b4b6aaefd311a751f4a45d54046f76d4f91419a2e530
+Description:  WLAN tools for breaking 802.11 WEP/WPA keys
+
+Package: libsqlite3
+Version: 3130000-2
+Depends: libc, libpthread
+Source: feeds/packages/libs/sqlite3
+License: PUBLICDOMAIN
+Section: libs
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: brcm2708
+Installed-Size: 328182
+Filename: libsqlite3_3130000-2_brcm2708.ipk
+Size: 328774
+MD5Sum: cbdf56d986709b67b4796e43ca790ba3
+SHA256sum: fa0a8bf1dcae853531f047acf099c89939dafdabf1b17ea7322df1a9a128d991
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: reaver
+Version: 1.4-1
+Depends: libc, libpcap, libsqlite3
+Source: feeds/packages/net/reaver
+License: GPL-2.0
+Section: net
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: brcm2708
+Installed-Size: 184930
+Filename: reaver_1.4-1_brcm2708.ipk
+Size: 153288
+MD5Sum: 0d51f721e3ef6faba437a84625c5339c
+SHA256sum: 4e497be0dd6fceaf06323fd12dff636c751acab995f7396e7e1efe7a5a422bc7
+Description:  Reaver targets the external registrar functionality mandated by the WiFi
+ Protected Setup specification.
+ Access points will provide authenticated registrars with their current
+ wireless configuration (including the WPA PSK), and also accept a new
+ configuration from the registrar.
 
