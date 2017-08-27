@@ -1,0 +1,56 @@
+raspiberry
+http://wiki.jikexueyuan.com/project/raspberry-pi/spi.html
+
+openwrt-raspberry
+https://thatblstudio.github.io/blog/make-raspberry-pi-a-fqrouter/
+
+http://liberize.me/tech/turn-raspberry-pi-into-a-router.html
+
+https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=68363
+
+
+openwrt 编译
+https://thatblstudio.github.io/blog/make-raspberry-pi-a-fqrouter/
+https://wiki.openwrt.org/doc/howto/buildroot.exigence
+https://devzone.nordicsemi.com/blogs/700/trying-openwrt-chaos-calmer-1505-rc1-on-raspberry-/
+http://dab-embedded.com/en/blogs/openwrt-on-arm-based-platform-raspberry-pi-2/
+http://sh.sxshax.xyz/posts/2016/06/28/RPi-Router/
+http://46aae4d1e2371e4aa769798941cef698.devproxy.yunshipei.com/agrapier/article/details/51986561
+https://github.com/wongsyrone/LinuxNotes/blob/master/06.md
+
+
+Failed to connect to github.com port 443: Connection timed out
+failed.解决办法
+
+gcc版本下载
+http://www.gnu.org/prep/ftp
+
+openwrt 相关知识
+http://wiki.openwrt.org/zh-cn/doc/networking/network.interfaces
+https://blog.phpgao.com/openwrt-interface.html
+http://www.openwrtdl.com/wordpress/category/openwrt%e6%95%99%e7%a8%8b
+
+解决sercurt make menuconfig 乱码的问题
+http://blog.csdn.net/ganshuyu/article/details/26468643
+
+EOUP 无线网卡
+https://forum.openwrt.org/viewtopic.php?id=60967
+https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=44044
+http://www.minihere.com/edup-ep-n8508gs-usb-wifi-adapter-driver-download.html
+
+AP
+http://ihacklog.com/post/use-hostapd-to-setup-wireless-access-point-under-linux.html
+http://shumeipai.nxez.com/2015/07/28/install-openwrt-will-be-transformed-into-a-versatile-router-raspberry-pi.html
+http://www.cnblogs.com/craftor/p/3811627.html
+http://www.geekfan.net/9849/
+
+cross-compile openwrt qt5
+https://www.olimex.com/forum/index.php?topic=3825.0
+https://wiki.qt.io/Raspberry_Pi_Beginners_Guide
+http://blog.sina.com.cn/s/blog_615e7b3f0102vh9q.html
+http://www.gpupowered.org/node/34
+http://bbs.csdn.net/topics/390387852
+openwrt opkg update 更新慢，自己搭建源
+http://www.52pi.net/forum.php?mod=viewthread&tid=1419
+QT raspiberry
+http://www.cnblogs.com/findumars/p/5744870.html
